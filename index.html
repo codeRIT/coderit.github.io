@@ -1,16 +1,39 @@
-<html>
-  <head>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
-      ga('create', 'UA-50549728-1', 'coderit.org');
-      ga('send', 'pageview');
-    </script>
-  </head>
-  <body>
-    Totes a website yo.
-  </body>
-</html>
+---
+layout: default
+title: Home
+---
+
+<header class="clean" style="height: 350px; background-image: url({{ site.cover }});">
+	{% include top.html %}
+	<div id="home-title">
+		<a href="{{ site.url }}">
+			<img src="{{ site.icon }}" class="site-icon">
+		</a>
+	</div>
+</header>
+<div id="post-list">
+	{% for post in paginator.posts %}
+		<div>
+			<span class="post-date">{{ post.date | date_to_long_string }}</span>
+			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+			<p class="post-description">{{ post.content | strip_html | truncatewords: 50 }}</p>
+		</div>
+		<br>
+	{% endfor %}
+</div>
+<nav class="pagination" role="navigation">
+	{% if paginator.next_page %}
+		<a class="newer-posts" href="/page{{paginator.next_page}}">&larr; Older posts</a>
+	{% endif %}
+	<span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+	{% if paginator.previous_page %}
+		{% if paginator.page == 2 %}
+			<a class="older-posts" href="/">Newer posts &rarr;</a>
+		{% else %}
+			<a class="older-posts" href="/page{{paginator.previous_page}}">Newer posts &rarr;</a>
+		{% endif %}
+	{% endif %}
+</nav>
+<footer class="clean" style="background-image: url({{ site.cover }}); background-position: bottom; height: 60px;">
+	<p class="copyright">&copy;{{ site.time | date: "%Y" }}, <a href="{{ site.copyright.url }}" target="_blank">{{ site.copyright.author }}</a>. <a href="{{ site.copyright.type_url }}" target="_blank">{{ site.copyright.type_title }}</a>.</p>
+</footer>
