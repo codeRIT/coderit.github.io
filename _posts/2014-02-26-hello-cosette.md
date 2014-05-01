@@ -1,18 +1,13 @@
 ---
 layout: post
-title: "Hello, codeRIT Viewer"
-quote: Thinny reaches a new version, with mobile support and some other cool features.
-image: /media/2014-02-26-hello-cosette/cover.jpg
-video: false
+title: "Welcome"
+quote: codeRIT comes to life!
+image: false
+video: true
+video_mp4: /media/2014-02-26-hello-cosette/StockInnovation.mp4
 ---
 
-#Thinny 2.1, codename "[Cosette](http://lesmiserables.wikia.com/wiki/Cosette)"
 
-Cosette is the main character of the french novel _Les Misérables_, published in 1862 by _Victor Hugo_.
-
-{% include image.html url="/media/2014-02-26-hello-cosette/cosette.jpg" width="100%" description="Amanda Seyfried as Cosette on the 2012 movie." %}
-
-This new version of Thinny comes with mobile support and some bugfixes.
 
 ## Usage
 
@@ -22,15 +17,7 @@ The global variables are set on the `_config.yml` file.
 
 To start, you need to change at least the variable `url` on the file.
 
-#### Social links
-
-To add a social link you just need to add the following code inside the variable `social`:
-
-```
-  - icon:	[the genericon name for the social network]
-    url:	[the url to follow]
-    desc:	[a small description for the link (e.g. "Follow me on twitter")]
-```
+<iframe width="560" height="315" src="//www.youtube.com/embed/HlGcXcdwJqk" frameborder="0" allowfullscreen></iframe>
 
 #### Menu
 
