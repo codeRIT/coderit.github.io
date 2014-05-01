@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hello, Cosette"
+title: "Hello, codeRIT Viewer"
 quote: Thinny reaches a new version, with mobile support and some other cool features.
 image: /media/2014-02-26-hello-cosette/cover.jpg
 video: false
