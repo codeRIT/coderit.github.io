@@ -1,0 +1,24 @@
+.banner
+  background: $white
+  border-bottom: 1px solid #ccc
+  @include box-shadow(inset 0 0 45px rgba(0, 0, 0, 0.15) )
+  padding: 20px 80px
+  .banner-inner
+    border-left: 8px solid #888
+    padding: 5px 20px 10px
+    margin: 65px
+    font-size: 1.714em
+  p
+    margin: 0
+    padding: 0
+    position: relative
+    quotes: "“" "”" "‘" "’"
+    text-shadow: 0px 1px 1px rgba(17, 17, 17, 0.2)
+    &:before
+      content: open-quote
+      position: absolute
+      right: 100%
+      color: lighten($body_type_color, 50%)
+    &:after
+      content: close-quote
+      color: lighten($body_type_color, 50%)

@@ -1,6 +1,6 @@
 # Dependencies
 markdown:	redcarpet
-pygments:	true
+pygments:	false
 
 # Permalinks
 permalink:	/blog/:title
@@ -8,12 +8,8 @@ permalink:	/blog/:title
 # Setup
 title:		codeRIT
 tagline:	'codeRIT'
-description:	'codeRIT represents a coalition of students with a mission to represent the RIT hackathon community on a national level. It focuses its attention towards increasing its relationship with other collegiate technical communities, teaching software development and entrepreneurial skills to its members, and uniting a fragmented collection of groups amongst GCCIS as one RIT group'
+description:	'codeRIT represents a coalition of students with a mission to represent the RIT hackathon community on a national level. It focuses its attention towards increasing its relationship with other collegiate technical communities, teaching software development and entrepreneurial skills to its members, and uniting a fragmented collection of groups amongst GCCIS as one RIT group.'
 url:		http://coderit.org
-
-author:
-  name:		'codeRIT'
-  url:		https://google.com/+IanCamporezBrunelli
 
 paginate:	5
 
@@ -37,16 +33,13 @@ social:
   - icon:	feed
     url:	http://camporez.com/atom.xml
     desc:	Subscribe to my feed
-    
+
 menu:
   - title:	Home
     url:	/
-    
-  - title:	About
-    url:	/about
-    
-copyright:
-  author:	Camporez
-  url:		http://camporez.com
-  type_title:	Some rights reserved
-  type_url:	http://creativecommons.org/licenses/by-nc/2.5
+
+  - title:  About
+    url:  /about
+
+  - title:	Contact
+    url:	/contact

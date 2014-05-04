@@ -1,0 +1,31 @@
+//global vars
+$body_bg: #DDD
+$body_type_color: #333
+$body_type_font: 'Open Sans'//, 'Helvetica Neue'//, Helvetica, Arial, sans-serif
+$orange: #F36E21
+$white: #F8F8F8
+
+html
+  height: 100%
+body
+  background: $body_bg
+  color: $body_type_color
+  font-family: $body_type_font
+  height: 100%
+  margin: 0
+  padding: 0
+a
+  color: $orange
+  &:hover, &:focus
+    color: $white
+  &:focus
+    outline-color: #333
+
+.container, .container-fluid
+  max-width: 1170px
+#main
+  height: auto !important
+  height: 100%
+  min-height: 100%
+  margin-bottom: -30px
+  padding-bottom: 40px
