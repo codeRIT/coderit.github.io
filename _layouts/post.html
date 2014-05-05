@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+<div id="main">
+{% include header.html %}
+<div class="banner {% if page.darkimage %}dark{% endif %}" {% if page.image %}style="background-image:url({{page.image}});"{% endif %}>
+  <div class="container-fluid">
+    <div class="banner-inner">
+      <p>{{ page.quote }}</p>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-10 col-md-offset-1">
+    <h1 class="page-title">{{ page.title }}</h1>
+    {{ content }}
+    </div>
+  </div>
+</div>
+</div>
+{% include foot.html %}
+</body>
+</html>

@@ -11,33 +11,10 @@ tagline:	'codeRIT'
 description:	'codeRIT represents a coalition of students with a mission to represent the RIT hackathon community on a national level. It focuses its attention towards increasing its relationship with other collegiate technical communities, teaching software development and entrepreneurial skills to its members, and uniting a fragmented collection of groups amongst GCCIS as one RIT group.'
 url:		http://coderit.org
 
-paginate:	5
+paginate:	3
 
 # Custom vars
-icon:		/assets/images/icon.png
-cover:		/assets/images/cover.jpg
-
-social:
-  - icon:	twitter
-    url:	https://twitter.com/iancamporez
-    desc:	Follow me on twitter
-
-  - icon:	github
-    url:	https://github.com/camporez
-    desc:	Fork me on github
-
-  - icon:	googleplus-alt
-    url:	https://google.com/+IanCamporezBrunelli
-    desc:	Add me on google+
-
-  - icon:	feed
-    url:	http://camporez.com/atom.xml
-    desc:	Subscribe to my feed
-
 menu:
-  - title:	Home
-    url:	/
-
   - title:  About
     url:  /about
 
