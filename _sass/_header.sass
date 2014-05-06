@@ -1,0 +1,15 @@
+.navbar
+  background: $orange
+  border: 0
+  border-bottom: 1px solid
+  border-color: darken($orange, 10%)
+  @include border-radius(0)
+  margin: 0
+  width: 100%
+  .navbar-toggle .icon-bar
+    background: $off_white
+  .nav>li>a, .navbar-brand
+    color: $off_white
+    &:hover, &:focus
+      background: darken($orange, 10%)
+      color: $white

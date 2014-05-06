@@ -1,0 +1,28 @@
+.banner
+  background: $white
+  background: url(white_texture.png)
+  background-position: center center
+  background-size: 100% 100%
+  padding: 20px 80px
+  &.dark
+    color: $white
+  .banner-inner
+    border-left: 8px solid #888
+    border-color: $orange //v2
+    padding: 5px 20px 10px
+    margin: 65px
+    font-size: 1.714em
+  p
+    margin: 0
+    padding: 0
+    position: relative
+    quotes: "“" "”" "‘" "’"
+    text-shadow: 0px 1px 1px rgba(17, 17, 17, 0.2)
+    &:before
+      content: open-quote
+      position: absolute
+      right: 100%
+      color: lighten($body_type_color, 50%)
+    &:after
+      content: close-quote
+      color: lighten($body_type_color, 50%)
