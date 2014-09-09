@@ -2,23 +2,76 @@
 layout: default
 title: Home
 ---
-<div class="banner">
-	<div class="container-fluid">
-		<div class="banner-inner">
-			<p>{{ site.description }}</p>
-		</div>
-	</div>
+<div class="banner welcome">
+  <div class="inner container">
+      <img class="logo" src="/assets/images/coderit_logo2.svg" alt="codeRIT" title="codeRIT" />
+      <h1>Information Session - September 10, 2014</h3>
+      <h3 class="subtitle">Come by and see what we are all about.</h3>
+      <p>RIT's Innovation Center<br/>6&#58;00 PM<br/></p>
+  </div>
 </div>
-<div class="ribbon">
-  <div class="container-fluid">
-    <div class="row">
-      {% for post in paginator.posts %}
-        <div class="col-xs-4">
-          <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-          <p class="post-description">{{ post.content | strip_html | truncatewords: 50 }}</p>
-          <span class="post-date">{{ post.date | date_to_long_string }}</span>
-        </div>
-      {% endfor %}
+<div class="divider"></div>
+<div id="mission" class="container">
+    <div class="grid-cta three">
+      <div class="col center">
+        <span class="fa-stack fa-5x">
+        <i class="fa fa-circle-thin fa-stack-2x"></i>
+        <i class="fa fa-sitemap fa-stack-1x"></i>
+        </span>
+        <h3>Networking</h3>
+        <p>Meet new people with the same interests and work together to make awesome projects</p>
+      </div>
+      <div class="col center">
+        <span class="fa-stack fa-5x">
+        <i class="fa fa-circle-thin fa-stack-2x"></i>
+        <i class="fa fa-group fa-stack-1x"></i>
+        </span>
+        <h3>Community</h3>
+        <p>Learn from other students and explore new opportunities right here on campus</p>
+      </div>
+      <div class="col center">
+        <span class="fa-stack fa-5x">
+        <i class="fa fa-circle-thin fa-stack-2x"></i>
+        <i class="fa fa-rocket fa-stack-1x"></i>
+        </span>
+        <h3>Take Off</h3>
+        <p>Experience new hackathons across the nation with a team of friends building together</p>
+      </div>
+    </div>
+</div>
+<div id="brickhack" class="banner">
+  <div class="container">
+    <h1>Brick Hack</h1>
+    <h3 class="subtitle">RIT's brand new hackathon</h3>
+    <p>Currently we are planning Brick Hack, and we need all hands on board and will take all the help we can get. If you are interested in joining one of our comittees or getting involved a different way, please don't hesitate.</p>
+    <a class="button large" href="mailto:carl@coderit.org">Get Involved</a>
+  </div>
+</div>
+<div id="contact">
+  <div class="container">
+    <div class="grid-cta two">
+      <div class="col">
+        <h3>Get Information.</h3>
+        <p>If you want to learn more about our organization, please email our director.</p>
+        <a class="button" href="mailto:carl@coderit.org" rel="nofollow"><i class="fa fa-envelope"></i>Send an Email</a>
+      </div>
+      <div class="col">
+        <h3>Stay Informed.</h3>
+        <p><a class="fa fa-facebook-square" href="https://www.facebook.com/groups/codeRIT/" target="_blank" rel="nofollow"></a> Join our group on Facebook to get the latest news and updates.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="mlh" class="container">
+    <h1>MLH</h1>
+    <div class="grid-cta two">
+      <div class="col">
+        <p><a href="http://mlh.io" target="_blank" rel="nofollow">Major League Hacking (MLH)</a> powers the official student hackathon league. Each semester, more than 15,000 developers, designers, and makers compete for their school’s glory at the 50+ official MLH hackathons in the United States, Canada, and United Kingdom.</p>
+        <p>MLH Hackathons are weekend long programming competitions where student hackers get together to show off their technical skills. Students from hundreds of universities team up to build things like websites, applications, hardware hacks, and at the end of the weekend they show them off to the world.</p>
+      </div>
+      <div class="col center">
+        <a href="http://mlh.io" target="_blank" rel="nofollow"><img src="/assets/images/mlh_logo.png" alt="Major League Hacking" title="Major League Hacking" /></a>
+      </div>
     </div>
   </div>
 </div>
