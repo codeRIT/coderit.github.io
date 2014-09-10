@@ -10,13 +10,3 @@ title:		codeRIT
 tagline:	'codeRIT'
 description:	'codeRIT represents a coalition of students with a mission to represent the RIT hackathon community on a national level. It focuses its attention towards increasing its relationship with other collegiate technical communities, teaching software development and entrepreneurial skills to its members, and uniting a fragmented collection of groups amongst GCCIS as one RIT group.'
 url:		http://coderit.org
-
-paginate:	3
-
-# Custom vars
-menu:
-  - title:  About
-    url:  /about
-
-  - title:	Contact
-    url:	/contact

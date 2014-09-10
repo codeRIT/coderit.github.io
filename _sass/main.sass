@@ -1,8 +1,156 @@
+/* Main.sass */
 
-@import '_mixins'
-@import '_globals'
-@import '_header'
-@import '_banner'
-@import '_ribbon'
-@import '_page'
-@import '_footer'
+// general colors
+$yellow				: #FEE375
+$white				: #ECF0F1
+$grey-light		: darken($white, 8%)
+$grey-dark		: #444444
+// logo colors
+$orange-light : #F98728
+$orange-med		: #F36321
+$orange-dark	: #CE5F15
+$blue					: #384859
+$offwhite			: #FCF3E8
+
+//fonts
+$font-body-family							:	'Open Sans', sans-serif
+$font-headlines-family				: 'Montserrat', sans-serif
+$font-headlines-weight-bold 	: 700
+$font-headlines-weight-reg 		:	400
+
+body
+	background: $white
+	color: $grey-dark
+	font-family: $font-body-family
+	font-size: 16px
+	margin: 0
+	padding: 0
+
+h1, h2, h3
+	font-family: $font-headlines-family
+	font-weight: $font-headlines-weight-reg
+	&.subtitle
+		color: $white
+h1
+	font-size: 3em
+h2
+	font-size: 2.5em
+h3
+	font-size: 2em
+	margin-top: 0px
+
+img
+	max-width: 100%
+	width: auto
+
+a
+	color: $orange-dark
+	text-decoration: none
+	&:hover
+		color: $orange-med
+
+.container
+	margin: 0 auto
+	max-width: 1200px
+	padding: 0 8px
+
+.banner
+	background: $blue
+	box-sizing: border-box
+	color: $white
+	display: block
+	margin: 0 auto
+	padding: 10px 0
+	position: relative
+	width: 100%
+	.inner
+		left: 0
+		right: 0
+	h1
+		color: $orange-light
+	// custom banners
+	&.welcome
+		background: url('coderit_background.png') center center fixed
+		padding: 60px 0 80px
+		text-align: center
+
+.divider
+	background: darken($blue, 10%)
+	height: 25px
+	margin: 0
+
+.button
+	background: lighten($blue, 8%)
+	border: 2px solid darken($blue, 8%)
+	color: $white
+	display: inline-block
+	padding: 5px 10px
+	text-decoration: none
+	&:hover
+		background: lighten($blue, 12%)
+		color: $white
+	&.large
+		font-size: 1.25em
+
+.text-large
+	font-size: 2em
+
+.underline
+	text-decoration: underline
+
+.grid-cta
+	.col
+		box-sizing: border-box
+		float: left
+		padding-right: 35px
+	&.two
+		.col
+			width: 50%
+	&.three
+		.col
+			width: 33.3333%
+	&:after
+		content: ""
+		display: table
+		clear: both
+
+.center
+	text-align: center
+
+// SECTIONS
+#mission
+	color: $grey-dark
+	padding: 25px 0
+
+#brickhack
+	background: url("coderit_background.png") center center fixed
+	text-align: center
+	padding: 20px
+	h1
+		font-size: 5em
+		margin-bottom: 0
+		margin-top: 0
+	h3
+		font-size: 1.545em
+
+#contact
+	background: $grey-light
+	padding: 20px 0
+	.fa
+		margin-right: 10px
+		vertical-align: middle
+		&.fa-facebook-square
+			font-size: 2em
+		&.fa-envelope
+			vertical-align: top
+			font-size: 1.45em
+
+@media screen and (max-width: 798px)
+	body
+		font-size: 14px
+	.grid-cta
+		.col
+			clear: both
+			float: none !important
+			margin-top: 8px
+			width: 100% !important
