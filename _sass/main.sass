@@ -12,11 +12,18 @@ $orange-dark	: #CE5F15
 $blue					: #384859
 $offwhite			: #FCF3E8
 
-//fonts
+// fonts
 $font-body-family							:	'Open Sans', sans-serif
 $font-headlines-family				: 'Montserrat', sans-serif
 $font-headlines-weight-bold 	: 700
 $font-headlines-weight-reg 		:	400
+
+// constants
+$footer-height: 90px
+
+body, html
+	height: 100%
+	min-height: 250px
 
 body
 	background: $white
@@ -117,6 +124,12 @@ a
 .center
 	text-align: center
 
+.foot-pusher
+	min-height: 100%
+	height: auto !important
+	height: 100%
+	margin-bottom: -$footer-height
+
 // SECTIONS
 #mission
 	color: $grey-dark
@@ -144,6 +157,16 @@ a
 		&.fa-envelope
 			vertical-align: top
 			font-size: 1.45em
+
+#footer
+	height: $footer-height
+	border-bottom: 25px solid darken($blue, 10%)
+
+#error-page
+	h1
+		margin-top: 0
+		padding-top: 25px
+
 
 @media screen and (max-width: 798px)
 	body
