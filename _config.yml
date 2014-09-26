@@ -1,6 +1,6 @@
 # Dependencies
 markdown:	redcarpet
-pygments:	false
+highliter:	pygments
 
 # Permalinks
 permalink:	/blog/:title
