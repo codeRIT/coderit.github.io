@@ -2,11 +2,27 @@
 markdown:	redcarpet
 highliter:	pygments
 
-# Permalinks
-permalink:	/blog/:title
-
 # Setup
 title:		codeRIT
-tagline:	'codeRIT'
-description:	'codeRIT represents a coalition of students with a mission to represent the RIT hackathon community on a national level. It focuses its attention towards increasing its relationship with other collegiate technical communities, teaching software development and entrepreneurial skills to its members, and uniting a fragmented collection of groups amongst GCCIS as one RIT group.'
 url:		http://coderit.org
+
+committees:
+- name: Logistics & Hospitality
+  description: Our main goal is to make sure that everyone is comfortable and having during Brick Hack events. We are responsible for planning out many the many needs of the event, such as locations, events, venue setup, food, and many other important event amenities.
+  image: http://placehold.it/150
+
+- name: Marketing & Design
+  description: Our team is in charge of the branding of our organization by creatings logos, building and managing websites, getting swag to hand out, and handling all of our social media efforts. We also handle advertising our events to help increase the number of attendees.
+  image: http://placehold.it/150
+
+- name: Director
+  description: Communicates all organization ongoings with each committee as well as with administration.
+  image: http://placehold.it/150
+
+- name: Sponsorship
+  description: We reach out to some of the best companies in the world to come to and sponsor our events. Without the financial support from these different companies, none of our events could take place.
+  image: http://placehold.it/150
+
+- name: Travel & Outreach
+  description: We communicate with other schools to learn how make our own organization better. By networking with other schools, we open more opportunities to attend their events and for them to attend ours.
+  image: http://placehold.it/150
