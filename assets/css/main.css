@@ -4,8 +4,8 @@ body, html {
   min-height: 250px; }
 
 body {
-  background: #ecf0f1;
-  color: #444444;
+  background: white;
+  color: #505050;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   margin: 0;
@@ -13,9 +13,10 @@ body {
 
 h1, h2, h3 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  margin-top: 0; }
   h1.subtitle, h2.subtitle, h3.subtitle {
-    color: #ecf0f1; }
+    color: white; }
 
 h1 {
   font-size: 3em; }
@@ -42,10 +43,34 @@ a {
   max-width: 1200px;
   padding: 0 8px; }
 
+.button {
+  border: 1px solid white;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  color: white;
+  display: inline-block;
+  font-weight: 700;
+  margin-top: 25px;
+  padding: 5px 25px 8px;
+  position: relative; }
+  .button:hover {
+    background: white;
+    color: #384859; }
+  .button.orange {
+    color: #f3852a;
+    border-color: #f3852a; }
+    .button.orange:hover {
+      background: #f3852a;
+      color: white; }
+
 .banner {
   background: #384859;
+  background: url("coderit_background.png") center center fixed;
   box-sizing: border-box;
-  color: #ecf0f1;
+  color: white;
   display: block;
   margin: 0 auto;
   padding: 10px 0;
@@ -54,30 +79,28 @@ a {
   .banner .inner {
     left: 0;
     right: 0; }
-  .banner h1 {
-    color: #f98728; }
   .banner.welcome {
     background: url("coderit_background.png") center center fixed;
+    font-size: 1.25em;
+    height: 100%;
+    min-height: 200px;
     padding: 60px 0 80px;
     text-align: center; }
-
-.divider {
-  background: #242f3a;
-  height: 25px;
-  margin: 0; }
-
-.button {
-  background: #485c72;
-  border: 2px solid #283440;
-  color: #ecf0f1;
-  display: inline-block;
-  padding: 5px 10px;
-  text-decoration: none; }
-  .button:hover {
-    background: #50667f;
-    color: #ecf0f1; }
-  .button.large {
-    font-size: 1.25em; }
+    .banner.welcome .logo {
+      margin-bottom: 25px;
+      max-width: 60%; }
+    .banner.welcome #learn-more:after {
+      border-color: white transparent transparent transparent;
+      border-style: solid;
+      border-width: 12px;
+      content: "";
+      display: block;
+      height: 0;
+      left: 50%;
+      position: absolute;
+      top: 150%;
+      transform: translateX(-50%);
+      width: 0; }
 
 .text-large {
   font-size: 2em; }
@@ -89,6 +112,8 @@ a {
   box-sizing: border-box;
   float: left;
   padding-right: 35px; }
+  .grid-cta .col:last-child {
+    padding-right: 0; }
 .grid-cta.two .col {
   width: 50%; }
 .grid-cta.three .col {
@@ -107,36 +132,137 @@ a {
   height: 100%;
   margin-bottom: -90px; }
 
-#mission {
-  color: #444444;
-  padding: 25px 0; }
+.title {
+  color: #f3852a;
+  text-align: center; }
 
-#brickhack {
-  background: url("coderit_background.png") center center fixed;
-  text-align: center;
-  padding: 20px; }
-  #brickhack h1 {
-    font-size: 5em;
-    margin-bottom: 0;
-    margin-top: 0; }
-  #brickhack h3 {
-    font-size: 1.545em; }
+.section {
+  padding: 90px 0; }
+  .section .title {
+    margin-bottom: 110px; }
+
+#about .title {
+  margin-bottom: 110px; }
+#about .badge-cta .badge-icon {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  border: 1px solid;
+  box-sizing: border-box;
+  color: #194774;
+  height: 150px;
+  padding: 30px;
+  width: 150px; }
+#about .badge-cta .badge-name {
+  margin-top: 30px; }
+#about hr {
+  background: #444444;
+  border-color: #444444;
+  color: #444444;
+  margin: 75px auto;
+  width: 50%; }
+#about #mission {
+  font-size: 1.125em;
+  margin-left: 10%;
+  text-align: justify;
+  width: 80%; }
+
+#events {
+  background: url("coderit_background_light.png") center center fixed;
+  color: #505050;
+  padding-bottom: 100px;
+  padding-top: 100px; }
+  #events .inner {
+    background: white;
+    margin: 10px;
+    padding: 50px; }
+  #events h3 {
+    color: #f3852a; }
+  #events p {
+    margin: 0 auto;
+    text-align: justify;
+    width: 50%; }
+
+.event-list {
+  list-style: none;
+  margin: 0 auto;
+  padding-left: 0;
+  width: 50%; }
+  .event-list .event {
+    color: #194774;
+    margin-bottom: 10px; }
+  .event-list .event-title {
+    font-size: 1.125em;
+    margin: 0 0 5px; }
+  .event-list .event-info {
+    font-size: 0.875em;
+    list-style: none;
+    padding: 0; }
+    .event-list .event-info .fa {
+      margin-right: 10px; }
+
+#committees .committee {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: -2px;
+  width: 49%; }
+  #committees .committee .committee-img {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: top;
+    width: 25%; }
+  #committees .committee .committee-info {
+    display: inline-block;
+    margin-left: 1%;
+    vertical-align: top;
+    width: 70%; }
+  #committees .committee .committee-desc {
+    text-align: justify; }
+  #committees .committee .committee-name {
+    color: #f3852a;
+    margin: 0; }
+  #committees .committee.middle {
+    text-align: center;
+    transform: translateX(50%); }
+    #committees .committee.middle .committee-img {
+      display: block;
+      margin: 0 auto; }
+  #committees .committee.right {
+    text-align: right; }
+    #committees .committee.right .committee-info {
+      margin-left: 0;
+      margin-right: 1%; }
 
 #contact {
-  background: #d5dde0;
   padding: 20px 0; }
   #contact .fa {
     margin-right: 10px;
     vertical-align: middle; }
-    #contact .fa.fa-facebook-square {
-      font-size: 2em; }
-    #contact .fa.fa-envelope {
-      vertical-align: top;
-      font-size: 1.45em; }
+  #contact .grid-cta {
+    margin: 0 auto;
+    width: 50%; }
+    #contact .grid-cta .col {
+      display: inline-block;
+      float: none;
+      vertical-align: middle;
+      width: 48%; }
+
+#contact-links a {
+  display: block;
+  margin-bottom: 10px; }
 
 #footer {
-  height: 90px;
-  border-bottom: 25px solid #242f3a; }
+  background: #242f3a;
+  color: white;
+  padding: 3px 0;
+  text-align: center; }
 
 #error-page h1 {
   margin-top: 0;
@@ -150,4 +276,18 @@ a {
     clear: both;
     float: none !important;
     margin-top: 8px;
-    width: 100% !important; } }
+    padding-right: 0;
+    width: 100% !important; }
+
+  #about .badge-cta {
+    margin-bottom: 40px; }
+    #about .badge-cta .badge-name {
+      margin: 0; }
+
+  #events .inner {
+    padding: 20px 10px; }
+  #events p {
+    width: auto; }
+
+  .event-list {
+    width: 100%; } }

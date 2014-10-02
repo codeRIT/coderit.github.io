@@ -1,0 +1,12 @@
+<ul class="event-list">
+  {% for post in site.categories.events order:asc %}
+  <li class="event">
+    <h4 class="event-title">{{ post.title }}</h4>
+    <ul class="event-info">
+      <li><i class="fa fa-calendar-o"></i>{{ post.date | date: "%b %-d %Y"}}
+      {% if post.time %}<li><i class="fa fa-clock-o"></i>{{ post.time }}{% endif %}
+      <li><i class="fa fa-map-marker"></i>{{ post.location }}
+    </ul>
+  </li>
+  {% endfor %}
+</ul>
