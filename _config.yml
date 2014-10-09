@@ -8,15 +8,15 @@ url:		http://coderit.org
 
 committees:
 - name: Logistics & Hospitality
-  description: Our main goal is to make sure that everyone is comfortable and having during Brick Hack events. We are responsible for planning out many the many needs of the event, such as locations, events, venue setup, food, and many other important event amenities.
+  description: Our main goal is to make sure that everyone is comfortable and having fun during Brick Hack events. We are responsible for planning out the many needs of the event, such as location, events, venue setup, food, and many other important amenities.
   image: http://placehold.it/150
 
 - name: Marketing & Design
-  description: Our team is in charge of the branding of our organization by creatings logos, building and managing websites, getting swag to hand out, and handling all of our social media efforts. We also handle advertising our events to help increase the number of attendees.
+  description: Our team is in charge of the branding of our organization by creatings logos, building and managing websites, getting swag to hand out, and handling all of our social media efforts.
   image: http://placehold.it/150
 
 - name: Director
-  description: Communicates all organization ongoings with each committee as well as with administration.
+  description: Communicates all organization ongoings with each committee as well as with administration. Maintains various weekly events for the entire organization.
   image: http://placehold.it/150
 
 - name: Sponsorship
