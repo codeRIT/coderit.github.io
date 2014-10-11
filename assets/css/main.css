@@ -77,8 +77,14 @@ a {
   position: relative;
   width: 100%; }
   .banner .inner {
-    left: 0;
-    right: 0; }
+    position: absolute;   
+    left: 50%;   
+    top: 50%;   
+    min-width: 300px;
+    transform: translate(-50%, -50%);   
+    -webkit-transform: translate(-50%, -50%);   
+    -moz-transform: translate(-50%, -50%);   
+    -o-transform: translate(-50%, -50%);}
   .banner.welcome {
     background: url("coderit_background.png") center center fixed;
     font-size: 1.25em;
@@ -87,8 +93,7 @@ a {
     padding: 60px 0 80px;
     text-align: center; }
     .banner.welcome .logo {
-      margin-bottom: 25px;
-      max-width: 60%; }
+      margin-bottom: 25px;}
     .banner.welcome #learn-more:after {
       border-color: white transparent transparent transparent;
       border-style: solid;
