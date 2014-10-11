@@ -13,7 +13,7 @@ $(document).ready(function () {
 
 var Events = {
   init : function () {
-    gapi.client.setApiKey('AIzaSyDTyYHxMN8sAUCystSZWuXXgCZfxpSI_kw');
+    gapi.client.setApiKey('AIzaSyDufIu3Vp_NMj989bPzJNOMrIYV0pTnNiU');
     gapi.client.request({
       'path' : '/calendar/v3/calendars/coderit.public@gmail.com/events',
       'callback' : Events.displayEvents,
