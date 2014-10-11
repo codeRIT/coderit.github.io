@@ -96,8 +96,14 @@ a
 	position: relative
 	width: 100%
 	.inner
-		left: 0
-		right: 0
+		position: absolute;   
+	    	left: 50%;   
+	    	top: 50%;   
+	    	min-width: 300px;
+	    	transform: translate(-50%, -50%);   
+	    	-webkit-transform: translate(-50%, -50%);   
+	    	-moz-transform: translate(-50%, -50%);   
+	    	-o-transform: translate(-50%, -50%);
 	// custom banners
 	&.welcome
 		background: url('coderit_background.png') center center fixed
@@ -108,7 +114,6 @@ a
 		text-align: center
 		.logo
 			margin-bottom: 25px
-			max-width: 60%
 		#learn-more
 			&:after
 				border-color: $white transparent transparent transparent
