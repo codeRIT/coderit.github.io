@@ -5,6 +5,7 @@
 // general colors
 $yellow				: #FEE375
 $white				: #FFFFFF
+$grey-light			: #888888
 $grey-med			: #505050
 $grey-dark		: #444444
 // logo colors
@@ -102,7 +103,7 @@ a
 		background: url('coderit_background.png') center center fixed
 		font-size: 1.25em
 		height: 100%
-		min-height: 200px
+		min-height: 350px
 		padding: 60px 0 80px
 		text-align: center
 		.logo
@@ -159,9 +160,15 @@ a
 	color: $orange-light
 	text-align: center
 
+.loader
+	max-width: 80px
+	margin-top: 50%
+	opacity: 0.6
+	tranform: translateY(-50%)
 // SECTIONS
 .section
-	padding: 90px 0
+	padding-bottom: 90px
+	padding-top: 90px
 	.title
 		margin-bottom: 110px
 
@@ -206,11 +213,15 @@ a
 		margin: 0 auto
 		text-align: justify
 		width: 50%
-.event-list
+
+#event-list-cta
+	margin: 0 auto 15px
+	width: 65%
+#event-list
 	list-style: none
-	margin: 0 auto
 	padding-left: 0
-	width: 50%
+	.event-page
+		display: none
 	.event
 		color: $blue-light
 		margin-bottom: 10px
@@ -223,6 +234,19 @@ a
 		padding: 0
 		.fa
 			margin-right: 10px
+.event-page-nav
+	background: $grey-light
+	@include border-radius (4px)
+	cursor: pointer
+	display: inline-block
+	height: 15px
+	margin-right: 10px
+	width: 15px
+	&:hover
+		background: $blue
+	&.active
+		background: $orange-light
+
 
 #committees
 	.committee
@@ -288,7 +312,7 @@ a
 		padding-top: 25px
 
 
-@media screen and (max-width: 798px)
+@media screen and (max-width: 768px)
 	body
 		font-size: 14px
 	.grid-cta
@@ -299,16 +323,52 @@ a
 			padding-right: 0
 			width: 100% !important
 
+	.section
+		padding-bottom: 15px
+		padding-top: 15px
+		.title
+			margin-bottom: 25px
 	#about
 		.badge-cta
 			margin-bottom: 40px
+			.badge-icon
+				font-size: 3em
+				height: 100px
+				width: 100px
 			.badge-name
 				margin: 0
 
 	#events
+		padding-bottom: 20px
+		padding-top: 20px
 		.inner
 			padding: 20px 10px
 		p
 			width: auto
-	.event-list
+	#event-list
 		width: 100%
+
+	#committees
+		.committee
+			display: block !important
+			margin-left: 0
+			text-align: left !important
+			transform: none !important
+			width: 100% !important
+		.committee-info
+			margin-left: 0 !important
+			width: 100% !important
+
+@media screen and (max-width: 400px)
+
+	#contact
+		.grid-cta
+			width: auto
+
+	#events
+		.container
+			background: $white
+		.inner
+			padding: 10px 3px
+	#event-list-cta
+		width: auto

@@ -10,3 +10,78 @@ $(document).ready(function () {
   });
 
 });
+
+var Events = {
+  init : function () {
+    gapi.client.setApiKey('AIzaSyDTyYHxMN8sAUCystSZWuXXgCZfxpSI_kw');
+    gapi.client.request({
+      'path' : '/calendar/v3/calendars/coderit.public@gmail.com/events',
+      'callback' : Events.displayEvents,
+      'orderBy' : 'startTime',
+      'singleEvents' : true
+    });
+  },
+  showEventPage : function (id) {
+    $('.event-page').hide();
+    $('.event-page[data-event-page=' + id + ']').show();
+  },
+  changeEventPage : function (e) {
+    var $target = $(e.target);
+    Events.showEventPage($target.data('event-page-id'));
+    $('.event-page-nav').removeClass('active');
+    $target.addClass('active');
+  },
+  displayEvents : function (response) {
+    if (response.items.length === 0) {
+      $('#event-list-cta').html('<h4>There are no upcoming events.</h4>');
+      return false;
+    }
+
+    // sort events by date
+    var events = response.items.sort(function (a ,b) {
+      if (a.start.dateTime !== undefined)
+        a.start.date = a.start.dateTime;
+      if (b.start.dateTime !== undefined)
+        b.start.date = b.start.dateTime;
+      return new Date(a.start.date) - new Date(b.start.date);
+    });
+    var count = 0;
+    var numPages = 1;
+    var html = '<ul id="event-list">';
+    // print each event
+    response.items.forEach(function(event) {
+      if (count === 0) {
+        html += '<div class="event-page" data-event-page="'+ numPages +'">';
+      }
+      html += '<li class="event">';
+      html += '<h4 class="event-title">' + event.summary + '</h4>';
+      html += '<ul class="event-info">';
+      date = moment(event.start.date);
+      html += '<li><i class="fa fa-calendar-o"></i>' + date.format('MMM D \'YY') + '</li>';
+      // print out time if set
+      html += (event.start.dateTime === undefined)?'':'<li><i class="fa fa-clock-o"></i>' + date.format('h:mm A') + '</li>';
+      html += (event.location === undefined)?'':'<li><i class="fa fa-map-marker"></i>' + event.location + '</li>';
+      html += '</ul>';
+      html += '</li>';
+      count++;
+      if (count === 4) {
+        html += '</div>';
+        count = 0;
+        numPages++;
+      }
+    });
+    html += '</ul>';
+
+    if (numPages > 1) {
+      for (var i = 1; i <= numPages; i++) {
+        html += '<span data-event-page-id="'+ i +'" class="event-page-nav';
+        html += (i === 1)?' active':'';
+        html += '">&nbsp;</span>';
+      }
+    }
+    $('#event-list-cta').html(html);
+    Events.showEventPage(1);
+    $('.event-page-nav').on('click', Events.changeEventPage);
+    $('#event-list').css('minHeight', $('#event-list').height());
+  }
+}
