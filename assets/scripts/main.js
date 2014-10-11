@@ -32,6 +32,10 @@ var Events = {
     $target.addClass('active');
   },
   displayEvents : function (response) {
+    if (response.error !== undefined) {
+      $('#event-list-cta').html('<h4>There was an error getting our events.</h4>');
+    }
+
     if (response.items.length === 0) {
       $('#event-list-cta').html('<h4>There are no upcoming events.</h4>');
       return false;
