@@ -34,6 +34,7 @@ var Events = {
   displayEvents : function (response) {
     if (response.error !== undefined) {
       $('#event-list-cta').html('<h4>There was an error getting our events.</h4>');
+      return false;
     }
 
     if (response.items.length === 0) {
