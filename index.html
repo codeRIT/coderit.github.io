@@ -5,59 +5,111 @@ title: Home
 <div class="banner welcome">
   <div class="inner container">
       <img class="logo" src="/assets/images/coderit_logo2.svg" alt="codeRIT" title="codeRIT" />
-      <h1>Information Session - September 10, 2014</h3>
-      <h3 class="subtitle">Come by and see what we are all about.</h3>
-      <p>GOL-1400<br/>6&#58;00 PM<br/></p>
+      <p>The community for RIT's developers<br/>and creative thinkers.</p>
+      <a id="learn-more" href="#about" class="button scroll-to">LEARN MORE</a>
   </div>
 </div>
-<div class="divider"></div>
-<div id="mission" class="container">
-    <div class="grid-cta three">
-      <div class="col center">
-        <span class="fa-stack fa-5x">
-        <i class="fa fa-circle-thin fa-stack-2x"></i>
-        <i class="fa fa-sitemap fa-stack-1x"></i>
-        </span>
-        <h3>Networking</h3>
-        <p>Meet new people with the same interests and work together to make awesome projects.</p>
-      </div>
-      <div class="col center">
-        <span class="fa-stack fa-5x">
-        <i class="fa fa-circle-thin fa-stack-2x"></i>
-        <i class="fa fa-group fa-stack-1x"></i>
-        </span>
-        <h3>Community</h3>
-        <p>Learn from other students and explore new opportunities right here on campus.</p>
-      </div>
-      <div class="col center">
-        <span class="fa-stack fa-5x">
-        <i class="fa fa-circle-thin fa-stack-2x"></i>
-        <i class="fa fa-rocket fa-stack-1x"></i>
-        </span>
-        <h3>Take Off</h3>
-        <p>Experience new hackathons across the nation with a team of friends building together.</p>
+<div id="about" class="section container">
+  <h2 class="title">WHAT IS CODERIT?</h2>
+  <div class="grid-cta three">
+    <div class="col center badge-cta">
+      <i class="fa fa-sitemap fa-5x badge-icon"></i>
+      <h3 class="badge-name">Networking</h3>
+      <p>Meet like-minded creators. Forge new relationships.</p>
+    </div>
+    <div class="col center badge-cta">
+      <i class="fa fa-group fa-5x badge-icon"></i>
+      <h3 class="badge-name">Community</h3>
+      <p>Learn from your peers. Ignite RIT's hacking culture.</p>
+    </div>
+    <div class="col center badge-cta">
+      <i class="fa fa-rocket fa-5x badge-icon"></i>
+      <h3 class="badge-name">Take Off</h3>
+      <p>Participate at hackathons across the nation.</p>
+    </div>
+  </div>
+  <hr />
+  <p id="mission">“codeRIT represents a coalition of RIT students with a mission to represent the RIT hackathon community on a national level. It focuses its attention towards increasing its relationship with other collegiate technical communities, teaching software development and entrepreneurial skills to its members, and uniting a fragmented collection of groups amongst GCCIS as one RIT group.”</p>
+</div>
+<div id="events" class="banner">
+  <div class="section">
+    <h3 class="center">EVENT SCHEDULE</h3>
+    <div class="container">
+      <div class="inner">
+        <div class="grid-cta two">
+          <div class="col">
+            {% include events.html %}
+          </div>
+          <div class="col center">
+            <h3>Brick Hack</h3>
+            <h4>April 18-20th 2015</h4>
+            <p>If you would like to be a part of RIT's history, we could use your help. Join one of our committees and help create something great.</p>
+            <a class="button orange" href="mailto:carl@coderit.org">Get Involved</a>
+          </div>
+        </div>
       </div>
     </div>
-</div>
-<div id="brickhack" class="banner">
-  <div class="container">
-    <h1>Brick Hack</h1>
-    <h3 class="subtitle">RIT's brand new hackathon</h3>
-    <p>Currently we are planning Brick Hack, and we need all hands on board and will take all the help we can get. If you are interested in joining one of our committees or getting involved a different way, please don't hesitate.</p>
-    <a class="button large" href="mailto:carl@coderit.org">Get Involved</a>
   </div>
 </div>
-<div id="contact">
-  <div class="container">
+<div id="committees" class="section container">
+  <h2 class="title">OUR COMMITTEES</h2>
+  <div class="committee">
+    <div class="committee-info">
+      <h3 class="committee-name">{{ site.committees[0].name }}</h3>
+      <p class="committee-desc">{{ site.committees[0].description }}</p>
+    </div>
+  </div>
+  <div class="committee right">
+    <div class="committee-info">
+      <h3 class="committee-name">{{ site.committees[1].name }}</h3>
+      <p class="committee-desc">{{ site.committees[1].description }}</p>
+    </div>
+  </div>
+  <div class="break">
+    <div class="committee middle">
+      <div class="committee-info">
+        <h3 class="committee-name">{{ site.committees[2].name }}</h3>
+        <p class="comittee-desc">{{ site.committees[2].description }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="committee">
+    <div class="committee-info">
+      <h3 class="committee-name">{{ site.committees[3].name }}</h3>
+      <p class="committee-desc">{{ site.committees[3].description }}</p>
+    </div>
+  </div>
+  <div class="committee right">
+    <div class="committee-info">
+      <h3 class="committee-name">{{ site.committees[4].name }}</h3>
+      <p class="committee-desc">{{ site.committees[4].description }}</p>
+    </div>
+  </div>
+</div>
+<div id="contact" class="banner">
+  <div class="section container">
+    <h2 class="title">GET IN TOUCH</h2>
     <div class="grid-cta two">
       <div class="col">
-        <h3>Get Information.</h3>
-        <p>If you want to learn more about our organization, please email our director.</p>
-        <a class="button" href="mailto:carl@coderit.org" rel="nofollow"><i class="fa fa-envelope"></i>Send an Email</a>
+        Rochester Institute of Technology<br/>
+        1 Lomb Memorial Dr.<br/>
+        Rochester, NY 14623
       </div>
-      <div class="col">
-        <h3>Stay Informed.</h3>
-        <p><a class="fa fa-facebook-square" href="https://www.facebook.com/groups/codeRIT/" target="_blank" rel="nofollow"></a> Join our group on Facebook to get the latest news and updates.</p>
+      <div id="contact-links" class="col">
+        <a href="https://www.facebook.com/groups/codeRIT/" target="_blank" rel="nofollow">
+          <span class="fa fa-stack">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-facebook fa-stack-1x"></i>
+          </span>
+          Join our group.
+        </a>
+        <a href="mailto:carl@coderit.org" target="_blank" rel="nofollow">
+          <span class="fa fa-stack">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-envelope fa-stack-1x"></i>
+          </span>
+          Email our director.
+        </a>
       </div>
     </div>
   </div>

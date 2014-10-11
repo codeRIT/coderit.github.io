@@ -1,26 +1,37 @@
 /* Main.sass */
 
+@import '_mixins'
+
 // general colors
 $yellow				: #FEE375
-$white				: #ECF0F1
-$grey-light		: darken($white, 8%)
+$white				: #FFFFFF
+$grey-light			: #888888
+$grey-med			: #505050
 $grey-dark		: #444444
 // logo colors
-$orange-light : #F98728
+$orange-light : #F3852A
 $orange-med		: #F36321
 $orange-dark	: #CE5F15
 $blue					: #384859
+$blue-light		: #194774
 $offwhite			: #FCF3E8
 
-//fonts
+// fonts
 $font-body-family							:	'Open Sans', sans-serif
 $font-headlines-family				: 'Montserrat', sans-serif
-$font-headlines-weight-bold 	: 700
-$font-headlines-weight-reg 		:	400
+$font-bold 										: 700
+$font-reg 										:	400
+
+// constants
+$footer-height: 90px
+
+body, html
+	height: 100%
+	min-height: 250px
 
 body
 	background: $white
-	color: $grey-dark
+	color: $grey-med
 	font-family: $font-body-family
 	font-size: 16px
 	margin: 0
@@ -28,7 +39,8 @@ body
 
 h1, h2, h3
 	font-family: $font-headlines-family
-	font-weight: $font-headlines-weight-reg
+	font-weight: $font-reg
+	margin-top: 0
 	&.subtitle
 		color: $white
 h1
@@ -54,8 +66,28 @@ a
 	max-width: 1200px
 	padding: 0 8px
 
+.button
+	border: 1px solid $white
+	@include border-radius (8px)
+	color: $white
+	display: inline-block
+	font-weight: $font-bold
+	margin-top: 25px
+	padding: 5px 25px 8px
+	position: relative
+	&:hover
+		background: $white
+		color: $blue
+	&.orange
+		color: $orange-light
+		border-color: $orange-light
+		&:hover
+			background: $orange-light
+			color: $white
+
 .banner
 	background: $blue
+	background: url('coderit_background.png') center center fixed
 	box-sizing: border-box
 	color: $white
 	display: block
@@ -66,31 +98,30 @@ a
 	.inner
 		left: 0
 		right: 0
-	h1
-		color: $orange-light
 	// custom banners
 	&.welcome
 		background: url('coderit_background.png') center center fixed
+		font-size: 1.25em
+		height: 100%
+		min-height: 350px
 		padding: 60px 0 80px
 		text-align: center
-
-.divider
-	background: darken($blue, 10%)
-	height: 25px
-	margin: 0
-
-.button
-	background: lighten($blue, 8%)
-	border: 2px solid darken($blue, 8%)
-	color: $white
-	display: inline-block
-	padding: 5px 10px
-	text-decoration: none
-	&:hover
-		background: lighten($blue, 12%)
-		color: $white
-	&.large
-		font-size: 1.25em
+		.logo
+			margin-bottom: 25px
+			max-width: 60%
+		#learn-more
+			&:after
+				border-color: $white transparent transparent transparent
+				border-style: solid
+				border-width: 12px
+				content: ''
+				display: block
+				height: 0
+				left: 50%
+				position: absolute
+				top: 150%
+				transform: translateX(-50%)
+				width: 0
 
 .text-large
 	font-size: 2em
@@ -103,6 +134,8 @@ a
 		box-sizing: border-box
 		float: left
 		padding-right: 35px
+		&:last-child
+			padding-right: 0
 	&.two
 		.col
 			width: 50%
@@ -117,35 +150,169 @@ a
 .center
 	text-align: center
 
-// SECTIONS
-#mission
-	color: $grey-dark
-	padding: 25px 0
+.foot-pusher
+	min-height: 100%
+	height: auto !important
+	height: 100%
+	margin-bottom: -$footer-height
 
-#brickhack
-	background: url("coderit_background.png") center center fixed
+.title
+	color: $orange-light
 	text-align: center
-	padding: 20px
-	h1
-		font-size: 5em
-		margin-bottom: 0
-		margin-top: 0
+
+.loader
+	max-width: 80px
+	margin-top: 50%
+	opacity: 0.6
+	tranform: translateY(-50%)
+// SECTIONS
+.section
+	padding-bottom: 90px
+	padding-top: 90px
+	.title
+		margin-bottom: 110px
+
+#about
+	.title
+		margin-bottom: 110px
+	.badge-cta
+		.badge-icon
+			@include border-radius (100%)
+			border: 1px solid
+			box-sizing: border-box
+			color: $blue-light
+			height: 150px
+			padding: 30px
+			width: 150px
+		.badge-name
+			margin-top: 30px
+	hr
+		background: $grey-dark
+		border-color: $grey-dark
+		color: $grey-dark
+		margin: 75px auto
+		width: 50%
+	#mission
+		font-size: 1.125em
+		margin-left: 10%
+		text-align: justify
+		width: 80%
+
+#events
+	background: url("coderit_background_light.png") center center fixed
+	color: $grey-med
+	padding-bottom: 100px
+	padding-top: 100px
+	.inner
+		background: $white
+		margin: 10px
+		padding: 50px
 	h3
-		font-size: 1.545em
+		color: $orange-light
+	p
+		margin: 0 auto
+		text-align: justify
+		width: 50%
+
+#event-list-cta
+	margin: 0 auto 15px
+	width: 65%
+#event-list
+	list-style: none
+	padding-left: 0
+	.event-page
+		display: none
+	.event
+		color: $blue-light
+		margin-bottom: 10px
+	.event-title
+		font-size: 1.125em
+		margin: 0 0 5px
+	.event-info
+		font-size: 0.875em
+		list-style: none
+		padding: 0
+		.fa
+			margin-right: 10px
+.event-page-nav
+	background: $grey-light
+	@include border-radius (4px)
+	cursor: pointer
+	display: inline-block
+	height: 15px
+	margin-right: 10px
+	width: 15px
+	&:hover
+		background: $blue
+	&.active
+		background: $orange-light
+
+
+#committees
+	.committee
+		box-sizing: border-box
+		display: inline-block
+		margin-bottom: 10px
+		margin-left: -2px
+		width: 49%
+		.committee-img
+			@include border-radius (100%)
+			display: inline-block
+			vertical-align: top
+			width: 25%
+		.committee-info
+			display: inline-block
+			margin-left: 1%
+			vertical-align: top
+			width: 70%
+		.committee-desc
+			text-align: justify
+		.committee-name
+			color: $orange-light
+			margin: 0
+		&.middle
+			text-align: center
+			transform: translateX(50%)
+			.committee-img
+				display: block
+				margin: 0 auto
+		&.right
+			text-align: right
+			.committee-info
+				margin-left: 0
+				margin-right: 1%
 
 #contact
-	background: $grey-light
 	padding: 20px 0
 	.fa
 		margin-right: 10px
 		vertical-align: middle
-		&.fa-facebook-square
-			font-size: 2em
-		&.fa-envelope
-			vertical-align: top
-			font-size: 1.45em
+	.grid-cta
+		margin: 0 auto
+		width: 50%
+		.col
+			display: inline-block
+			float: none
+			vertical-align: middle
+			width: 48%
+#contact-links
+	a
+		display: block
+		margin-bottom: 10px
 
-@media screen and (max-width: 798px)
+#footer
+	background: darken($blue, 10%)
+	color: $white
+	padding: 3px 0
+	text-align: center
+
+#error-page
+	h1
+		margin-top: 0
+		padding-top: 25px
+
+
+@media screen and (max-width: 768px)
 	body
 		font-size: 14px
 	.grid-cta
@@ -153,4 +320,55 @@ a
 			clear: both
 			float: none !important
 			margin-top: 8px
+			padding-right: 0
 			width: 100% !important
+
+	.section
+		padding-bottom: 15px
+		padding-top: 15px
+		.title
+			margin-bottom: 25px
+	#about
+		.badge-cta
+			margin-bottom: 40px
+			.badge-icon
+				font-size: 3em
+				height: 100px
+				width: 100px
+			.badge-name
+				margin: 0
+
+	#events
+		padding-bottom: 20px
+		padding-top: 20px
+		.inner
+			padding: 20px 10px
+		p
+			width: auto
+	#event-list
+		width: 100%
+
+	#committees
+		.committee
+			display: block !important
+			margin-left: 0
+			text-align: left !important
+			transform: none !important
+			width: 100% !important
+		.committee-info
+			margin-left: 0 !important
+			width: 100% !important
+
+@media screen and (max-width: 400px)
+
+	#contact
+		.grid-cta
+			width: auto
+
+	#events
+		.container
+			background: $white
+		.inner
+			padding: 10px 3px
+	#event-list-cta
+		width: auto
