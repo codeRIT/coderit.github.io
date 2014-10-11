@@ -4,7 +4,7 @@ body, html {
   min-height: 250px; }
 
 body {
-  background: #FFFFFF;
+  background: white;
   color: #505050;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -16,7 +16,7 @@ h1, h2, h3 {
   font-weight: 400;
   margin-top: 0; }
   h1.subtitle, h2.subtitle, h3.subtitle {
-    color: #FFFFFF; }
+    color: white; }
 
 h1 {
   font-size: 3em; }
@@ -33,10 +33,10 @@ img {
   width: auto; }
 
 a {
-  color: #CE5F15;
+  color: #ce5f15;
   text-decoration: none; }
   a:hover {
-    color: #F36321; }
+    color: #f36321; }
 
 .container {
   margin: 0 auto;
@@ -44,33 +44,33 @@ a {
   padding: 0 8px; }
 
 .button {
-  border: 1px solid #FFFFFF;
+  border: 1px solid white;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: white;
   display: inline-block;
   font-weight: 700;
   margin-top: 25px;
   padding: 5px 25px 8px;
   position: relative; }
   .button:hover {
-    background: #FFFFFF;
+    background: white;
     color: #384859; }
   .button.orange {
-    color: #F3852A;
-    border-color: #F3852A; }
+    color: #f3852a;
+    border-color: #f3852a; }
     .button.orange:hover {
-      background: #F3852A;
-      color: #FFFFFF; }
+      background: #f3852a;
+      color: white; }
 
 .banner {
   background: #384859;
   background: url("coderit_background.png") center center fixed;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: white;
   display: block;
   margin: 0 auto;
   padding: 10px 0;
@@ -86,20 +86,11 @@ a {
     min-height: 350px;
     padding: 60px 0 80px;
     text-align: center; }
-    .banner.welcome .inner.container {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      min-width: 300px;
-      width: 55%;
-      transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%); }
     .banner.welcome .logo {
-      margin-bottom: 25px; }
+      margin-bottom: 25px;
+      max-width: 60%; }
     .banner.welcome #learn-more:after {
-      border-color: #FFFFFF transparent transparent transparent;
+      border-color: white transparent transparent transparent;
       border-style: solid;
       border-width: 12px;
       content: "";
@@ -142,7 +133,7 @@ a {
   margin-bottom: -90px; }
 
 .title {
-  color: #F3852A;
+  color: #f3852a;
   text-align: center; }
 
 .loader {
@@ -191,11 +182,11 @@ a {
   padding-bottom: 100px;
   padding-top: 100px; }
   #events .inner {
-    background: #FFFFFF;
+    background: white;
     margin: 10px;
     padding: 50px; }
   #events h3 {
-    color: #F3852A; }
+    color: #f3852a; }
   #events p {
     margin: 0 auto;
     text-align: justify;
@@ -238,7 +229,7 @@ a {
   .event-page-nav:hover {
     background: #384859; }
   .event-page-nav.active {
-    background: #F3852A; }
+    background: #f3852a; }
 
 #committees .committee {
   box-sizing: border-box;
@@ -263,7 +254,7 @@ a {
   #committees .committee .committee-desc {
     text-align: justify; }
   #committees .committee .committee-name {
-    color: #F3852A;
+    color: #f3852a;
     margin: 0; }
   #committees .committee.middle {
     text-align: center;
@@ -297,7 +288,7 @@ a {
 
 #footer {
   background: #242f3a;
-  color: #FFFFFF;
+  color: white;
   padding: 3px 0;
   text-align: center; }
 
@@ -356,11 +347,9 @@ a {
     width: auto; }
 
   #events .container {
-    background: #FFFFFF; }
+    background: white; }
   #events .inner {
     padding: 10px 3px; }
 
   #event-list-cta {
     width: auto; } }
-
-/*# sourceMappingURL=main.css.map */
