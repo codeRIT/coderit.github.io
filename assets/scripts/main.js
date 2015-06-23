@@ -18,6 +18,9 @@ var Events = {
       'path' : '/calendar/v3/calendars/coderit.public@gmail.com/events',
       'callback' : Events.displayEvents,
       'orderBy' : 'startTime',
+      'params' : {
+        'timeMin': (new Date()).toISOString(),
+      },
       'singleEvents' : true
     });
   },
