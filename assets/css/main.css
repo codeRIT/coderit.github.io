@@ -65,6 +65,12 @@ a {
     .button.orange:hover {
       background: #F3852A;
       color: #FFFFFF; }
+  .button.blue {
+    color: #194774;
+    border-color: #194774; }
+    .button.blue:hover {
+      background: #194774;
+      color: #FFFFFF; }
 
 .banner {
   background: #384859;
