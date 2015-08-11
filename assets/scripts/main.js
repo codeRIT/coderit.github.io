@@ -54,11 +54,12 @@ var Events = {
       return new Date(a.start.date) - new Date(b.start.date);
     });
     var count = 0;
-    var numPages = 1;
+    var numPages = 0;
     var html = '<ul id="event-list">';
     // print each event
     response.items.forEach(function(event) {
       if (count === 0) {
+        numPages++;
         html += '<div class="event-page" data-event-page="'+ numPages +'">';
       }
       html += '<li class="event">';
@@ -75,7 +76,6 @@ var Events = {
       if (count === 4) {
         html += '</div>';
         count = 0;
-        numPages++;
       }
     });
     html += '</ul>';
