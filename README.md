@@ -1,6 +1,6 @@
-# coderit.github.io
+# clayhack.github.io
 
-The official website of [codeRIT](https://coderit.org).
+The official website of ClayHack
 
 Jekyll theme taken from: [here](https://github.com/camporez/Thinny)
 
