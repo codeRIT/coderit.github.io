@@ -8,7 +8,7 @@
 // general colors
 $yellow				: #FEE375
 $white				: #FFFFFF
-$grey-light			: #888888
+$grey-light		: #888888
 $grey-med			: #505050
 $grey-dark		: #444444
 // logo colors
@@ -18,6 +18,10 @@ $orange-dark	: #CE5F15
 $blue					: #384859
 $blue-light		: #194774
 $offwhite			: #FCF3E8
+
+//clayhack colors
+$clay					: #ED7277
+$clay-light		: #EF6669
 
 // fonts
 $font-body-family							:	'Open Sans', sans-serif
@@ -59,7 +63,6 @@ img
 	width: auto
 
 a
-	color: $orange-dark
 	text-decoration: none
 	&:hover
 		color: $orange-med
@@ -87,8 +90,17 @@ a
 	&.orange
 		color: $orange-light
 		border-color: $orange-light
+
 		&:hover
 			background: $orange-light
+			color: $white
+	&.clay
+		color: $clay
+		border-color: $clay-light
+		padding-bottom: 10px
+		margin-bottom: 2.5%
+		&:hover
+			background: $clay-light
 			color: $white
 	&.blue
 		color: $blue-light
@@ -143,6 +155,53 @@ a
 				transform: translateX(-50%)
 				width: 0
 
+.banner-clayhack
+	background: clay
+	background: url('clayhack_background.png') center center fixed
+	box-sizing: border-box
+	color: $white
+	display: block
+	margin: 0 auto
+	padding: 10px 0
+	position: relative
+	width: 100%
+	.inner
+		left: 0
+		right: 0
+	// custom banners
+	&.welcome
+		background: url('clayhack_background.png') center center fixed
+		font-size: 1.25em
+		height: 100%
+		min-height: 350px
+		padding: 60px 0 80px
+		text-align: center
+		.inner.container
+			position: absolute
+			left: 50%
+			top: 50%
+			min-width: 320px
+			transform: translate(-50%, -50%)
+			-webkit-transform: translate(-50%, -50%)
+			-moz-transform: translate(-50%, -50%)
+			-o-transform: translate(-50%, -50%)
+		.logo
+			margin-bottom: 25px
+		#learn-more
+			&:after
+				border-color: $white transparent transparent transparent
+				border-style: solid
+				border-width: 12px
+				content: ''
+				display: block
+				height: 0
+				left: 50%
+				position: absolute
+				top: 150%
+				transform: translateX(-50%)
+				width: 0
+
+
 .text-large
 	font-size: 2em
 
@@ -180,6 +239,14 @@ a
 	color: $orange-light
 	text-align: center
 
+.title-clayhack
+	color: $clay
+	text-align: center
+
+.title-clayhack-contact
+	color: $white
+	text-align: center
+
 .loader
 	max-width: 80px
 	margin-top: 50%
@@ -206,6 +273,17 @@ a
 			width: 150px
 		.badge-name
 			margin-top: 30px
+	.clayhack_badge-cta
+		.badge-icon
+			@include border-radius (100%)
+			border: 1px solid
+			box-sizing: border-box
+			color: $clay-light
+			height: 150px
+			padding: 30px
+			width: 150px
+		.badge-name
+			margin-top: 30px
 	hr
 		background: $grey-dark
 		border-color: $grey-dark
@@ -215,7 +293,8 @@ a
 	#mission
 		font-size: 1.125em
 		margin-left: 10%
-		text-align: justify
+		text-align: center
+		padding-bottom: 10px
 		width: 80%
 
 #events
@@ -231,9 +310,24 @@ a
 		color: $orange-light
 	p
 		margin: 0 auto
-		text-align: justify
+		text-align: center
 		width: 50%
 
+#events-clayhack
+	background: url("clayhack_background_light.png") center center fixed
+	color: $grey-med
+	padding-bottom: 100px
+	padding-top: 100px
+	.inner
+		background: $white
+		margin: 10px
+		padding: 50px
+	h3
+		color: $orange-light
+	p
+		margin: 0 auto
+		text-align: center
+		width: 50%
 #event-list-cta
 	margin: 0 auto 15px
 	width: 65%
@@ -317,6 +411,13 @@ a
 			width: 48%
 #contact-links
 	a
+		color: $orange-dark
+		display: block
+		margin-bottom: 10px
+		
+#contact-links-clayhack
+	a
+		color: $white
 		display: block
 		margin-bottom: 10px
 
@@ -326,10 +427,22 @@ a
 	padding: 3px 0
 	text-align: center
 
+#footer-clayhack
+	background: darken($clay, 10%)
+	color: $white
+	padding: 3px 0
+	text-align: center
+
 #error-page
 	h1
 		margin-top: 0
 		padding-top: 25px
+
+#clayhack-page
+	h3
+		font-size: 2em
+		margin-top: 0px
+		color: $white
 
 
 @media screen and (max-width: 768px)

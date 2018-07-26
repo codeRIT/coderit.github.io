@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>codeRIT</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2018-07-26T15:44:11-04:00</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name></name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>codeRIT General Meeting</title>
+   <link href="http://localhost:4000/events/2017/09/12/Meeting-1.html"/>
+   <updated>2017-09-12T00:00:00-04:00</updated>
+   <id>http://localhost:4000/events/2017/09/12/Meeting-1</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Y-Hack</title>
+   <link href="http://localhost:4000/events/2014/10/31/Y-Hack.html"/>
+   <updated>2014-10-31T00:00:00-04:00</updated>
+   <id>http://localhost:4000/events/2014/10/31/Y-Hack</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Hack MIT</title>
+   <link href="http://localhost:4000/events/2014/10/03/Hack-MIT.html"/>
+   <updated>2014-10-03T00:00:00-04:00</updated>
+   <id>http://localhost:4000/events/2014/10/03/Hack-MIT</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Big Red Hacks</title>
+   <link href="http://localhost:4000/events/2014/09/26/Big-Red-Hacks.html"/>
+   <updated>2014-09-26T00:00:00-04:00</updated>
+   <id>http://localhost:4000/events/2014/09/26/Big-Red-Hacks</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Welcome</title>
+   <link href="http://localhost:4000/2014/04/30/Welcome-codeRIT.html"/>
+   <updated>2014-04-30T00:00:00-04:00</updated>
+   <id>http://localhost:4000/2014/04/30/Welcome-codeRIT</id>
+   <content type="html">&lt;p&gt;codeRIT represents a coalition of students with a mission to represent the RIT hackathon community on a national level. It focuses its attention towards increasing its relationship with other collegiate technical communities, teaching software development and entrepreneurial skills to its members, and uniting a fragmented collection of groups amongst GCCIS as one RIT group&lt;/p&gt;
+
+&lt;p&gt;Video that was used to make this awesome site.&lt;br /&gt;&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/HlGcXcdwJqk&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+</content>
+ </entry>
+ 
+
+</feed>
