@@ -41,7 +41,7 @@ var Events = {
     }
 
     if (response.items.length === 0) {
-      $('#event-list-cta').html('<h4>There are no upcoming events.</h4>');
+      $('#event-list-cta').html('<h4>Check back soon for our schedule!</h4>');
       return false;
     }
 
