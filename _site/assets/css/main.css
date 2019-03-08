@@ -192,7 +192,7 @@ a {
   color: #444444;
   margin: 75px auto;
   width: 50%; }
-#about #mission {
+#about .paragraph {
   font-size: 1.125em;
   margin-left: 10%;
   text-align: center;
