@@ -149,16 +149,11 @@ a {
   margin-bottom: -90px; }
 
 .title {
-  color: #F3852A;
   text-align: center; }
-
-.title-clayhack {
-  color: #ED7277;
-  text-align: center; }
-
-.title-clayhack-contact {
-  color: #FFFFFF;
-  text-align: center; }
+  .title.coderit {
+    color: #F3852A; }
+  .title.clayhack {
+    color: #ED7277; }
 
 .loader {
   max-width: 80px;
