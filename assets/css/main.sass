@@ -11,6 +11,7 @@ $white				: #FFFFFF
 $grey-light		: #888888
 $grey-med			: #505050
 $grey-dark		: #444444
+
 // logo colors
 $orange-light : #F3852A
 $orange-med		: #F36321
@@ -111,8 +112,6 @@ a
 			color: $white
 
 .banner
-	background: $blue
-	background: url("../images/coderit/coderit_background.png") center center fixed
 	box-sizing: border-box
 	color: $white
 	display: block
@@ -123,55 +122,14 @@ a
 	.inner
 		left: 0
 		right: 0
-	// custom banners
-	&.welcome
+	&.coderit
+		background: $blue
 		background: url("../images/coderit/coderit_background.png") center center fixed
-		font-size: 1.25em
-		height: 100%
-		min-height: 350px
-		padding: 60px 0 80px
-		text-align: center
-		.inner.container
-			position: absolute
-			left: 50%
-			top: 50%
-			min-width: 320px
-			transform: translate(-50%, -50%)
-			-webkit-transform: translate(-50%, -50%)
-			-moz-transform: translate(-50%, -50%)
-			-o-transform: translate(-50%, -50%)
-		.logo
-			margin-bottom: 25px
-		#learn-more
-			&:after
-				border-color: $white transparent transparent transparent
-				border-style: solid
-				border-width: 12px
-				content: ''
-				display: block
-				height: 0
-				left: 50%
-				position: absolute
-				top: 150%
-				transform: translateX(-50%)
-				width: 0
-
-.banner-clayhack
-	background: clay
-	background: url("../images/clayhack/clayhack_background.png") center center fixed
-	box-sizing: border-box
-	color: $white
-	display: block
-	margin: 0 auto
-	padding: 10px 0
-	position: relative
-	width: 100%
-	.inner
-		left: 0
-		right: 0
+	&.clayhack
+		background: $clay
+		background: url("../images/clayhack/clayhack_background.png") center center fixed
 	// custom banners
 	&.welcome
-		background: url("../images/clayhack/clayhack_background.png") center center fixed
 		font-size: 1.25em
 		height: 100%
 		min-height: 350px
@@ -188,20 +146,6 @@ a
 			-o-transform: translate(-50%, -50%)
 		.logo
 			margin-bottom: 25px
-		#learn-more
-			&:after
-				border-color: $white transparent transparent transparent
-				border-style: solid
-				border-width: 12px
-				content: ''
-				display: block
-				height: 0
-				left: 50%
-				position: absolute
-				top: 150%
-				transform: translateX(-50%)
-				width: 0
-
 
 .text-large
 	font-size: 2em
@@ -237,22 +181,18 @@ a
 	margin-bottom: -$footer-height
 
 .title
-	color: $orange-light
 	text-align: center
-
-.title-clayhack
-	color: $clay
-	text-align: center
-
-.title-clayhack-contact
-	color: $white
-	text-align: center
+	&.coderit
+		color: $orange-light
+	&.clayhack
+		color: $clay
 
 .loader
 	max-width: 80px
 	margin-top: 50%
 	opacity: 0.6
 	tranform: translateY(-50%)
+
 // SECTIONS
 .section
 	padding-bottom: 90px
@@ -268,21 +208,13 @@ a
 			@include border-radius (100%)
 			border: 1px solid
 			box-sizing: border-box
-			color: $blue-light
 			height: 150px
 			padding: 30px
 			width: 150px
-		.badge-name
-			margin-top: 30px
-	.clayhack_badge-cta
-		.badge-icon
-			@include border-radius (100%)
-			border: 1px solid
-			box-sizing: border-box
-			color: $clay-light
-			height: 150px
-			padding: 30px
-			width: 150px
+			&.coderit
+				color: $blue-light
+			&.clayhack
+				color: $clay-light
 		.badge-name
 			margin-top: 30px
 	hr
@@ -291,7 +223,7 @@ a
 		color: $grey-dark
 		margin: 75px auto
 		width: 50%
-	#mission
+	p
 		font-size: 1.125em
 		margin-left: 10%
 		text-align: center
@@ -299,36 +231,22 @@ a
 		width: 80%
 
 #events
-	background: url("../images/coderit/coderit_background_light.png") center center fixed
 	color: $grey-med
 	padding-bottom: 100px
 	padding-top: 100px
+	.coderit
+			color: $orange-light
+	.clayhack
+			color: $white
 	.inner
 		background: $white
 		margin: 10px
 		padding: 50px
-	h3
-		color: $orange-light
 	p
 		margin: 0 auto
 		text-align: center
 		width: 50%
 
-#events-clayhack
-	background: url("../images/clayhack/clayhack_background_light.png") center center fixed
-	color: $grey-med
-	padding-bottom: 100px
-	padding-top: 100px
-	.inner
-		background: $white
-		margin: 10px
-		padding: 50px
-	h3
-		color: $orange-light
-	p
-		margin: 0 auto
-		text-align: center
-		width: 50%
 #event-list-cta
 	margin: 0 auto 15px
 	width: 65%
@@ -411,16 +329,10 @@ a
 			vertical-align: middle
 			width: 48%
 #contact-links
-	a
-		color: $orange-dark
-		display: block
-		margin-bottom: 10px
-
-#contact-links-clayhack
-	a
-		color: $white
-		display: block
-		margin-bottom: 10px
+		a
+			display: block
+			margin-bottom: 10px
+			color: $white
 
 #footer
 	background: darken($blue, 10%)
@@ -438,13 +350,6 @@ a
 	h1
 		margin-top: 0
 		padding-top: 25px
-
-#clayhack-page
-	h3
-		font-size: 2em
-		margin-top: 0px
-		color: $white
-
 
 @media screen and (max-width: 768px)
 	body

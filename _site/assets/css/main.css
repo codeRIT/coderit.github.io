@@ -84,8 +84,6 @@ a {
       color: #FFFFFF; }
 
 .banner {
-  background: #384859;
-  background: url("../images/coderit/coderit_background.png") center center fixed;
   box-sizing: border-box;
   color: #FFFFFF;
   display: block;
@@ -96,8 +94,13 @@ a {
   .banner .inner {
     left: 0;
     right: 0; }
+  .banner.coderit {
+    background: #384859;
+    background: url("../images/coderit/coderit_background.png") center center fixed; }
+  .banner.clayhack {
+    background: #ED7277;
+    background: url("../images/clayhack/clayhack_background.png") center center fixed; }
   .banner.welcome {
-    background: url("../images/coderit/coderit_background.png") center center fixed;
     font-size: 1.25em;
     height: 100%;
     min-height: 350px;
@@ -114,62 +117,6 @@ a {
       -o-transform: translate(-50%, -50%); }
     .banner.welcome .logo {
       margin-bottom: 25px; }
-    .banner.welcome #learn-more:after {
-      border-color: #FFFFFF transparent transparent transparent;
-      border-style: solid;
-      border-width: 12px;
-      content: "";
-      display: block;
-      height: 0;
-      left: 50%;
-      position: absolute;
-      top: 150%;
-      transform: translateX(-50%);
-      width: 0; }
-
-.banner-clayhack {
-  background: clay;
-  background: url("../images/clayhack/clayhack_background.png") center center fixed;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  display: block;
-  margin: 0 auto;
-  padding: 10px 0;
-  position: relative;
-  width: 100%; }
-  .banner-clayhack .inner {
-    left: 0;
-    right: 0; }
-  .banner-clayhack.welcome {
-    background: url("../images/clayhack/clayhack_background.png") center center fixed;
-    font-size: 1.25em;
-    height: 100%;
-    min-height: 350px;
-    padding: 60px 0 80px;
-    text-align: center; }
-    .banner-clayhack.welcome .inner.container {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      min-width: 320px;
-      transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%); }
-    .banner-clayhack.welcome .logo {
-      margin-bottom: 25px; }
-    .banner-clayhack.welcome #learn-more:after {
-      border-color: #FFFFFF transparent transparent transparent;
-      border-style: solid;
-      border-width: 12px;
-      content: "";
-      display: block;
-      height: 0;
-      left: 50%;
-      position: absolute;
-      top: 150%;
-      transform: translateX(-50%);
-      width: 0; }
 
 .text-large {
   font-size: 2em; }
@@ -202,16 +149,11 @@ a {
   margin-bottom: -90px; }
 
 .title {
-  color: #F3852A;
   text-align: center; }
-
-.title-clayhack {
-  color: #ED7277;
-  text-align: center; }
-
-.title-clayhack-contact {
-  color: #FFFFFF;
-  text-align: center; }
+  .title.coderit {
+    color: #F3852A; }
+  .title.clayhack {
+    color: #ED7277; }
 
 .loader {
   max-width: 80px;
@@ -235,25 +177,14 @@ a {
   border-radius: 100%;
   border: 1px solid;
   box-sizing: border-box;
-  color: #194774;
   height: 150px;
   padding: 30px;
   width: 150px; }
+  #about .badge-cta .badge-icon.coderit {
+    color: #194774; }
+  #about .badge-cta .badge-icon.clayhack {
+    color: #EF6669; }
 #about .badge-cta .badge-name {
-  margin-top: 30px; }
-#about .clayhack_badge-cta .badge-icon {
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
-  border-radius: 100%;
-  border: 1px solid;
-  box-sizing: border-box;
-  color: #EF6669;
-  height: 150px;
-  padding: 30px;
-  width: 150px; }
-#about .clayhack_badge-cta .badge-name {
   margin-top: 30px; }
 #about hr {
   background: #444444;
@@ -261,7 +192,7 @@ a {
   color: #444444;
   margin: 75px auto;
   width: 50%; }
-#about #mission {
+#about p {
   font-size: 1.125em;
   margin-left: 10%;
   text-align: center;
@@ -269,33 +200,18 @@ a {
   width: 80%; }
 
 #events {
-  background: url("../images/coderit/coderit_background_light.png") center center fixed;
   color: #505050;
   padding-bottom: 100px;
   padding-top: 100px; }
+  #events .coderit {
+    color: #F3852A; }
+  #events .clayhack {
+    color: #FFFFFF; }
   #events .inner {
     background: #FFFFFF;
     margin: 10px;
     padding: 50px; }
-  #events h3 {
-    color: #F3852A; }
   #events p {
-    margin: 0 auto;
-    text-align: center;
-    width: 50%; }
-
-#events-clayhack {
-  background: url("../images/clayhack/clayhack_background_light.png") center center fixed;
-  color: #505050;
-  padding-bottom: 100px;
-  padding-top: 100px; }
-  #events-clayhack .inner {
-    background: #FFFFFF;
-    margin: 10px;
-    padding: 50px; }
-  #events-clayhack h3 {
-    color: #F3852A; }
-  #events-clayhack p {
     margin: 0 auto;
     text-align: center;
     width: 50%; }
@@ -391,14 +307,9 @@ a {
       width: 48%; }
 
 #contact-links a {
-  color: #CE5F15;
   display: block;
-  margin-bottom: 10px; }
-
-#contact-links-clayhack a {
-  color: #FFFFFF;
-  display: block;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  color: #FFFFFF; }
 
 #footer {
   background: #242f3a;
@@ -415,11 +326,6 @@ a {
 #error-page h1 {
   margin-top: 0;
   padding-top: 25px; }
-
-#clayhack-page h3 {
-  font-size: 2em;
-  margin-top: 0px;
-  color: #FFFFFF; }
 
 @media screen and (max-width: 768px) {
   body {
