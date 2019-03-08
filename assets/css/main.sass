@@ -192,6 +192,7 @@ a
 	margin-top: 50%
 	opacity: 0.6
 	tranform: translateY(-50%)
+
 // SECTIONS
 .section
 	padding-bottom: 90px
@@ -207,23 +208,16 @@ a
 			@include border-radius (100%)
 			border: 1px solid
 			box-sizing: border-box
-			color: $blue-light
 			height: 150px
 			padding: 30px
 			width: 150px
+			&.coderit
+				color: $blue-light
+			&.clayhack
+				color: $clay-light
 		.badge-name
 			margin-top: 30px
-	.clayhack_badge-cta
-		.badge-icon
-			@include border-radius (100%)
-			border: 1px solid
-			box-sizing: border-box
-			color: $clay-light
-			height: 150px
-			padding: 30px
-			width: 150px
-		.badge-name
-			margin-top: 30px
+
 	hr
 		background: $grey-dark
 		border-color: $grey-dark

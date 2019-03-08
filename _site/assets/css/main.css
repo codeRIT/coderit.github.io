@@ -177,25 +177,14 @@ a {
   border-radius: 100%;
   border: 1px solid;
   box-sizing: border-box;
-  color: #194774;
   height: 150px;
   padding: 30px;
   width: 150px; }
+  #about .badge-cta .badge-icon.coderit {
+    color: #194774; }
+  #about .badge-cta .badge-icon.clayhack {
+    color: #EF6669; }
 #about .badge-cta .badge-name {
-  margin-top: 30px; }
-#about .clayhack_badge-cta .badge-icon {
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
-  border-radius: 100%;
-  border: 1px solid;
-  box-sizing: border-box;
-  color: #EF6669;
-  height: 150px;
-  padding: 30px;
-  width: 150px; }
-#about .clayhack_badge-cta .badge-name {
   margin-top: 30px; }
 #about hr {
   background: #444444;
