@@ -192,7 +192,7 @@ a {
   color: #444444;
   margin: 75px auto;
   width: 50%; }
-#about .paragraph {
+#about p {
   font-size: 1.125em;
   margin-left: 10%;
   text-align: center;
@@ -200,33 +200,18 @@ a {
   width: 80%; }
 
 #events {
-  background: url("../images/coderit/coderit_background_light.png") center center fixed;
   color: #505050;
   padding-bottom: 100px;
   padding-top: 100px; }
+  #events .coderit {
+    color: #F3852A; }
+  #events .clayhack {
+    color: #FFFFFF; }
   #events .inner {
     background: #FFFFFF;
     margin: 10px;
     padding: 50px; }
-  #events h3 {
-    color: #F3852A; }
   #events p {
-    margin: 0 auto;
-    text-align: center;
-    width: 50%; }
-
-#events-clayhack {
-  background: url("../images/clayhack/clayhack_background_light.png") center center fixed;
-  color: #505050;
-  padding-bottom: 100px;
-  padding-top: 100px; }
-  #events-clayhack .inner {
-    background: #FFFFFF;
-    margin: 10px;
-    padding: 50px; }
-  #events-clayhack h3 {
-    color: #F3852A; }
-  #events-clayhack p {
     margin: 0 auto;
     text-align: center;
     width: 50%; }
@@ -322,14 +307,9 @@ a {
       width: 48%; }
 
 #contact-links a {
-  color: #CE5F15;
   display: block;
-  margin-bottom: 10px; }
-
-#contact-links-clayhack a {
-  color: #FFFFFF;
-  display: block;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  color: #FFFFFF; }
 
 #footer {
   background: #242f3a;
@@ -346,11 +326,6 @@ a {
 #error-page h1 {
   margin-top: 0;
   padding-top: 25px; }
-
-#clayhack-page h3 {
-  font-size: 2em;
-  margin-top: 0px;
-  color: #FFFFFF; }
 
 @media screen and (max-width: 768px) {
   body {

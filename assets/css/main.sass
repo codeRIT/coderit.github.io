@@ -223,7 +223,7 @@ a
 		color: $grey-dark
 		margin: 75px auto
 		width: 50%
-	.paragraph
+	p
 		font-size: 1.125em
 		margin-left: 10%
 		text-align: center
@@ -231,36 +231,22 @@ a
 		width: 80%
 
 #events
-	background: url("../images/coderit/coderit_background_light.png") center center fixed
 	color: $grey-med
 	padding-bottom: 100px
 	padding-top: 100px
+	.coderit
+			color: $orange-light
+	.clayhack
+			color: $white
 	.inner
 		background: $white
 		margin: 10px
 		padding: 50px
-	h3
-		color: $orange-light
 	p
 		margin: 0 auto
 		text-align: center
 		width: 50%
 
-#events-clayhack
-	background: url("../images/clayhack/clayhack_background_light.png") center center fixed
-	color: $grey-med
-	padding-bottom: 100px
-	padding-top: 100px
-	.inner
-		background: $white
-		margin: 10px
-		padding: 50px
-	h3
-		color: $orange-light
-	p
-		margin: 0 auto
-		text-align: center
-		width: 50%
 #event-list-cta
 	margin: 0 auto 15px
 	width: 65%
@@ -343,16 +329,10 @@ a
 			vertical-align: middle
 			width: 48%
 #contact-links
-	a
-		color: $orange-dark
-		display: block
-		margin-bottom: 10px
-
-#contact-links-clayhack
-	a
-		color: $white
-		display: block
-		margin-bottom: 10px
+		a
+			display: block
+			margin-bottom: 10px
+			color: $white
 
 #footer
 	background: darken($blue, 10%)
@@ -370,13 +350,6 @@ a
 	h1
 		margin-top: 0
 		padding-top: 25px
-
-#clayhack-page
-	h3
-		font-size: 2em
-		margin-top: 0px
-		color: $white
-
 
 @media screen and (max-width: 768px)
 	body
