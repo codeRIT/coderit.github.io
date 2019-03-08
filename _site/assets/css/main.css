@@ -84,8 +84,6 @@ a {
       color: #FFFFFF; }
 
 .banner {
-  background: #384859;
-  background: url("../images/coderit/coderit_background.png") center center fixed;
   box-sizing: border-box;
   color: #FFFFFF;
   display: block;
@@ -96,8 +94,13 @@ a {
   .banner .inner {
     left: 0;
     right: 0; }
+  .banner.coderit {
+    background: #384859;
+    background: url("../images/coderit/coderit_background.png") center center fixed; }
+  .banner.clayhack {
+    background: #ED7277;
+    background: url("../images/clayhack/clayhack_background.png") center center fixed; }
   .banner.welcome {
-    background: url("../images/coderit/coderit_background.png") center center fixed;
     font-size: 1.25em;
     height: 100%;
     min-height: 350px;
@@ -114,62 +117,6 @@ a {
       -o-transform: translate(-50%, -50%); }
     .banner.welcome .logo {
       margin-bottom: 25px; }
-    .banner.welcome #learn-more:after {
-      border-color: #FFFFFF transparent transparent transparent;
-      border-style: solid;
-      border-width: 12px;
-      content: "";
-      display: block;
-      height: 0;
-      left: 50%;
-      position: absolute;
-      top: 150%;
-      transform: translateX(-50%);
-      width: 0; }
-
-.banner-clayhack {
-  background: clay;
-  background: url("../images/clayhack/clayhack_background.png") center center fixed;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  display: block;
-  margin: 0 auto;
-  padding: 10px 0;
-  position: relative;
-  width: 100%; }
-  .banner-clayhack .inner {
-    left: 0;
-    right: 0; }
-  .banner-clayhack.welcome {
-    background: url("../images/clayhack/clayhack_background.png") center center fixed;
-    font-size: 1.25em;
-    height: 100%;
-    min-height: 350px;
-    padding: 60px 0 80px;
-    text-align: center; }
-    .banner-clayhack.welcome .inner.container {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      min-width: 320px;
-      transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%); }
-    .banner-clayhack.welcome .logo {
-      margin-bottom: 25px; }
-    .banner-clayhack.welcome #learn-more:after {
-      border-color: #FFFFFF transparent transparent transparent;
-      border-style: solid;
-      border-width: 12px;
-      content: "";
-      display: block;
-      height: 0;
-      left: 50%;
-      position: absolute;
-      top: 150%;
-      transform: translateX(-50%);
-      width: 0; }
 
 .text-large {
   font-size: 2em; }

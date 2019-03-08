@@ -11,6 +11,7 @@ $white				: #FFFFFF
 $grey-light		: #888888
 $grey-med			: #505050
 $grey-dark		: #444444
+
 // logo colors
 $orange-light : #F3852A
 $orange-med		: #F36321
@@ -111,8 +112,6 @@ a
 			color: $white
 
 .banner
-	background: $blue
-	background: url("../images/coderit/coderit_background.png") center center fixed
 	box-sizing: border-box
 	color: $white
 	display: block
@@ -123,55 +122,14 @@ a
 	.inner
 		left: 0
 		right: 0
-	// custom banners
-	&.welcome
+	&.coderit
+		background: $blue
 		background: url("../images/coderit/coderit_background.png") center center fixed
-		font-size: 1.25em
-		height: 100%
-		min-height: 350px
-		padding: 60px 0 80px
-		text-align: center
-		.inner.container
-			position: absolute
-			left: 50%
-			top: 50%
-			min-width: 320px
-			transform: translate(-50%, -50%)
-			-webkit-transform: translate(-50%, -50%)
-			-moz-transform: translate(-50%, -50%)
-			-o-transform: translate(-50%, -50%)
-		.logo
-			margin-bottom: 25px
-		#learn-more
-			&:after
-				border-color: $white transparent transparent transparent
-				border-style: solid
-				border-width: 12px
-				content: ''
-				display: block
-				height: 0
-				left: 50%
-				position: absolute
-				top: 150%
-				transform: translateX(-50%)
-				width: 0
-
-.banner-clayhack
-	background: clay
-	background: url("../images/clayhack/clayhack_background.png") center center fixed
-	box-sizing: border-box
-	color: $white
-	display: block
-	margin: 0 auto
-	padding: 10px 0
-	position: relative
-	width: 100%
-	.inner
-		left: 0
-		right: 0
+	&.clayhack
+		background: $clay
+		background: url("../images/clayhack/clayhack_background.png") center center fixed
 	// custom banners
 	&.welcome
-		background: url("../images/clayhack/clayhack_background.png") center center fixed
 		font-size: 1.25em
 		height: 100%
 		min-height: 350px
@@ -188,20 +146,6 @@ a
 			-o-transform: translate(-50%, -50%)
 		.logo
 			margin-bottom: 25px
-		#learn-more
-			&:after
-				border-color: $white transparent transparent transparent
-				border-style: solid
-				border-width: 12px
-				content: ''
-				display: block
-				height: 0
-				left: 50%
-				position: absolute
-				top: 150%
-				transform: translateX(-50%)
-				width: 0
-
 
 .text-large
 	font-size: 2em
