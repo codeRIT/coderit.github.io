@@ -65,7 +65,7 @@ var Events = {
       html += '<li class="event">';
       html += '<h4 class="event-title">' + event.summary + '</h4>';
       html += '<ul class="event-info">';
-      date = moment(event.start.dateTime);
+      date = moment(event.start.dateTime || event.start.date);
       html += '<li><i class="fa fa-calendar-o"></i>' + date.format('MMM D \'YY') + '</li>';
       // print out time if set
       html += (event.start.dateTime === undefined)?'':'<li><i class="fa fa-clock-o"></i>' + date.format('h:mm A') + '</li>';
