@@ -48,7 +48,7 @@ section{
 }
 .about{
  padding-top: 30px;
- padding-bottom: 300px;
+ padding-bottom: 30px;
 }
 .about p{
  padding-left: 650px;
@@ -63,6 +63,8 @@ section{
  width: 50%;
  float: right;
  display: flex;
+ padding-top: 300px;
+ padding-left: 30px;
 }
 .footer-info-left{
  width: 50%;
@@ -82,4 +84,8 @@ section{
  height: 50px;
  padding-left: 30px;
  margin-bottom: -15px;
+}
+.paint-splash{
+ height: 100%;
+ width: 100%;
 }
