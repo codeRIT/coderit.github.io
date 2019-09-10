@@ -51,8 +51,8 @@ section{
  padding-bottom: 30px;
 }
 .about p{
- padding-left: 650px;
- padding-right: 650px;
+ padding-left: 30%;
+ padding-right: 30%;
  font-size: 20px;
 }
 .footer-left{
