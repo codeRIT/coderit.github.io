@@ -1,5 +1,5 @@
 version: 2
 main:
   type: static
-  path: 
+  path: /index.html
   spa: false
