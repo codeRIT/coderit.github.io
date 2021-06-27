@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>codeRIT</title>
+ <title>BrickHack</title>
  <link href="https://coderit.org/atom.xml" rel="self"/>
  <link href="https://coderit.org/"/>
- <updated>2021-06-27T01:28:58-05:00</updated>
+ <updated>2021-06-27T01:35:33-05:00</updated>
  <id>https://coderit.org</id>
  <author>
    <name></name>
