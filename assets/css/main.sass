@@ -93,7 +93,7 @@ a
 		color: $orange-light
 		border-color: $orange-light
 
-		&:hover
+		&:hover:not(.disabled)
 			background: $orange-light
 			color: $white
 	&.clay
@@ -101,15 +101,17 @@ a
 		border-color: $clay-light
 		padding-bottom: 10px
 		margin-bottom: 2.5%
-		&:hover
+		&:hover:not(.disabled)
 			background: $clay-light
 			color: $white
 	&.blue
 		color: $blue-light
 		border-color: $blue-light
-		&:hover
+		&:hover:not(.disabled)
 			background: $blue-light
 			color: $white
+	&.disabled
+		cursor: not-allowed
 
 .banner
 	box-sizing: border-box
@@ -203,6 +205,10 @@ a
 #about
 	.title
 		margin-bottom: 110px
+	.button-cta
+		.button
+			padding-left: 30px
+			padding-right: 30px
 	.badge-cta
 		.badge-icon
 			@include border-radius (100%)
@@ -368,6 +374,10 @@ a
 		.title
 			margin-bottom: 25px
 	#about
+		.button-cta
+			.button
+				width: 80%
+				max-width: 300px
 		.badge-cta
 			margin-bottom: 40px
 			.badge-icon

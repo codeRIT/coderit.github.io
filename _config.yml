@@ -3,9 +3,9 @@ markdown:	kramdown
 highliter:	pygments
 
 # Setup
-title:		codeRIT
+title:		BrickHack
 url:		https://coderit.org
-description: codeRIT represents a coalition of RIT students with a mission to represent the RIT hackathon community on a national level. It focuses its attention towards increasing its relationship with other collegiate technical communities, teaching software development and entrepreneurial skills to its members, and uniting a fragmented collection of groups amongst GCCIS as one RIT group.
+description: BrickHack represents a coalition of RIT students with a passion for producing excellent hackathons. It focuses its attention towards producing the annual BrickHack hackathon and other hackathons at RIT by uniting and enhancing the efforts of organizers, designers, sponsors, and other talented individuals.
 
 sass:
   sass_dir: _sass
